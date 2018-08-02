@@ -1,0 +1,83 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bootstrap_gray_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical"
+        android:background="@color/bootstrap_gray_dark">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dua_puluh"
+            android:layout_marginRight="@dimen/dua_puluh"
+            android:layout_marginTop="@dimen/sepuluh"
+            android:text="Kode Gejala"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            android:clickable="false"
+            android:id="@+id/bootstrapButtonGejala" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tiga_ratus"
+            android:layout_marginLeft="@dimen/dua_puluh"
+            android:layout_marginRight="@dimen/dua_puluh"
+            android:layout_marginBottom="@dimen/dua_puluh"
+            android:layout_marginTop="@dimen/sepuluh"
+            android:layout_below="@id/bootstrapButtonGejala"
+            android:text="Pertanyaan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="secondary"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            android:clickable="false"
+            android:id="@+id/bootstrapButtonPertanyaan" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/gejala_benar"
+            android:layout_width="@dimen/seratus"
+            android:layout_height="@dimen/empat_puluh"
+            android:layout_alignEnd="@+id/bootstrapButtonPertanyaan"
+            android:layout_below="@id/bootstrapButtonPertanyaan"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/bootstrapButtonPertanyaan"
+            android:text="@string/benar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/gejala_tidak"
+            android:layout_width="@dimen/seratus"
+            android:layout_height="@dimen/empat_puluh"
+            android:layout_alignLeft="@+id/bootstrapButtonPertanyaan"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/bootstrapButtonPertanyaan"
+            android:layout_below="@id/bootstrapButtonPertanyaan"
+            android:text="@string/tidak"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </RelativeLayout>
+</ScrollView>

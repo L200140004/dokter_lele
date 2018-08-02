@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/asSplash"
+        android:layout_width="@dimen/seratus"
+        android:layout_height="@dimen/seratus"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_dokter_lele_thumbnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/sepuluh"
+        android:text="@string/developer"
+        android:textSize="@dimen/text_kecil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

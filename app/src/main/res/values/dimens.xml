@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="delapan">8dp</dimen>
+    <dimen name="text_kecil">16sp</dimen>
+    <dimen name="text_sedang">20sp</dimen>
+    <dimen name="text_besar">32sp</dimen>
+    <dimen name="sepuluh">10dp</dimen>
+    <dimen name="lima_belas">15dp</dimen>
+    <dimen name="dua_puluh">20dp</dimen>
+    <dimen name="tiga_puluh">30dp</dimen>
+    <dimen name="seratus_lima_puluh">150dp</dimen>
+    <dimen name="lima">5dp</dimen>
+    <dimen name="text_detail">18sp</dimen>
+    <dimen name="tanggal">14sp</dimen>
+    <dimen name="titik">40sp</dimen>
+    <dimen name="tiga_puluh_dua">32dp</dimen>
+    <dimen name="enam_belas">16dp</dimen>
+    <dimen name="empat">4dp</dimen>
+    <dimen name="header_layout">128dp</dimen>
+    <dimen name="delapan_puluh">80dp</dimen>
+    <dimen name="seratus">100dp</dimen>
+    <dimen name="empat_puluh">40dp</dimen>
+    <dimen name="tiga_ratus">300dp</dimen>
+    <dimen name="slider">200dp</dimen>
+    <dimen name="lima_puluh">50dp</dimen>
+</resources>

@@ -1,0 +1,100 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGejala">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/textViewPenjelasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/lima_belas"
+            android:clickable="false"
+            android:text="Penjelasan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="secondary"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/textViewPenyebab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewPenjelasan"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/lima_belas"
+            android:clickable="false"
+            android:text="Penyebab"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/textViewPencegahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPenyebab"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/sepuluh"
+            android:clickable="false"
+            android:text="Cara Pencegahan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="secondary"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/textViewPengobatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPencegahan"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/sepuluh"
+            android:clickable="false"
+            android:text="Cara Pengobatan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="secondary"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/penyakit_selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPengobatan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dua_puluh"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/sepuluh"
+            android:text="@string/selesai"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </RelativeLayout>
+</ScrollView>

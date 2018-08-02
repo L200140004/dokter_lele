@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/navigasi_kategori_1"
+            android:title="@string/navigasi_kategori_1">
+            <menu>
+                <item
+                    android:id="@+id/menu_diagnosa"
+                    android:checked="false"
+                    android:icon="@drawable/ic_check"
+                    android:title="@string/menu_pertama" />
+                <item
+                    android:id="@+id/menu_penyakit"
+                    android:checked="false"
+                    android:icon="@drawable/ic_assessment"
+                    android:title="@string/menu_kedua" />
+                <item
+                    android:id="@+id/menu_gejala"
+                    android:checked="false"
+                    android:icon="@drawable/ic_assignment"
+                    android:title="@string/menu_ketiga" />
+                <item
+                    android:id="@+id/riwayat_penyakit"
+                    android:checked="false"
+                    android:icon="@drawable/ic_history_black"
+                    android:title="@string/menu_keempat" />
+            </menu>
+        </item>
+
+    </group>
+
+    <item
+        android:id="@+id/navigasi_kategori_2"
+        android:title="@string/navigasi_kategori_2">
+        <menu>
+            <item
+                android:id="@+id/keluar"
+                android:checked="false"
+                android:icon="@drawable/ic_close"
+                android:title="@string/menu_keluar" />
+        </menu>
+    </item>
+
+</menu>

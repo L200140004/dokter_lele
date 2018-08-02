@@ -1,0 +1,97 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:theme="@style/NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.development.abdur_rohman.dokter_lele.MainMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:background="@color/colorBackground">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:id="@+id/toolbar">
+        </include>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/textViewAplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/lima_belas"
+            android:clickable="false"
+            android:text="@string/dokter_lele"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+            android:id="@+id/imageViewAplikasi"
+            android:layout_width="@dimen/seratus_lima_puluh"
+            android:layout_height="@dimen/seratus_lima_puluh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/sepuluh"
+            android:layout_marginRight="@dimen/sepuluh"
+            android:layout_marginTop="@dimen/lima_belas"
+            android:layout_below="@id/textViewAplikasi"
+            android:src="@drawable/gambar_dokter_lele"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:hasBorder="false" />
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/imageViewAplikasi"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sepuluh">
+
+            <TextView
+                android:padding="@dimen/delapan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewAplikasiPenjelasan"
+                android:text="Penjelasan"
+                android:textSize="@dimen/text_kecil"
+                android:textColor="#1b1b1b"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/versi"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginBottom="@dimen/lima"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/bootstrap_gray_lightest"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/navigasi_item" >
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

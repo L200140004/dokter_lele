@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a968f</color>
+    <color name="colorPrimaryDark">#ef303030</color>
+    <color name="colorAccent">#b70018</color>
+    <color name="colorToolbar">#025000</color>
+    <color name="colorBackground">#202020</color>
+    <color name="colorGejala">#cfcfcf</color>
+    <color name="colorBlueDark">#34cfc5</color>
+    <color name="colorBlueDarker">#279f98</color>
+    <color name="msg_no_notes">#ffffff</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="riwayat_list_text">#232323</color>
+    <color name="colorTransapentWhite">#cccccc</color>
+</resources>

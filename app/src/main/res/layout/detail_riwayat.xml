@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/delapan"
+        android:paddingLeft="@dimen/enam_belas"
+        android:paddingRight="@dimen/enam_belas"
+        android:paddingTop="@dimen/delapan">
+
+        <TextView
+            android:id="@+id/titik"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tiga_puluh_dua"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/empat"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/titik" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titik"
+            android:textColor="@color/timestamp"
+            android:textSize="@dimen/tanggal" />
+
+        <TextView
+            android:id="@+id/riwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tanggal"
+            android:layout_toRightOf="@id/titik"
+            android:textColor="@color/riwayat_list_text"
+            android:textSize="@dimen/text_detail" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

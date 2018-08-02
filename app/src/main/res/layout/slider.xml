@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/NoActionBar"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="@dimen/slider"
+        android:layout_height="@dimen/slider"
+        android:layout_marginTop="@dimen/seratus"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_android"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/dua_puluh"
+        android:layout_below="@+id/slide_image"
+        android:id="@+id/slide_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_sedang"
+        android:textStyle="bold"
+        android:textColor="#cacaca"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:text="@string/dokter_lele" />
+
+    <TextView
+        android:layout_marginTop="@dimen/sepuluh"
+        android:layout_below="@+id/slide_heading"
+        android:id="@+id/slide_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dua_puluh"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_kecil"
+        android:textColor="#cacaca"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:text="@string/desc_slide1"/>
+
+</RelativeLayout>

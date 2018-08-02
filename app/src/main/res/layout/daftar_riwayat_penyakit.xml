@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sepuluh"
+        android:layout_marginRight="@dimen/sepuluh"
+        android:layout_marginTop="@dimen/lima_belas"
+        android:text="@string/judul_menu_4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"
+        android:clickable="false" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="@dimen/sepuluh"
+        android:layout_marginRight="@dimen/sepuluh"
+        android:layout_marginTop="@dimen/lima_belas"
+        android:layout_marginBottom="@dimen/lima_belas"/>
+
+    <TextView
+        android:id="@+id/riwayat_penyakit_kosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/kosong"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_sedang"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+</RelativeLayout>

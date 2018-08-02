@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sepuluh"
+        android:layout_marginRight="@dimen/sepuluh"
+        android:layout_marginTop="@dimen/lima_belas"
+        android:layout_marginBottom="@dimen/sepuluh"
+        android:text="@string/judul_menu_3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"
+        android:clickable="false" />
+
+    <ListView
+        android:id="@+id/daftar_gejala"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dua_puluh"
+        android:layout_marginLeft="@dimen/sepuluh"
+        android:layout_marginRight="@dimen/sepuluh"
+        android:clickable="false"
+        android:layoutMode="clipBounds" />
+</LinearLayout>
