@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
+
 import com.beardedhen.androidbootstrap.BootstrapButton;
 
 public class G21 extends AppCompatActivity {
@@ -33,6 +35,7 @@ public class G21 extends AppCompatActivity {
                         //Mengubungkan ke pertanyaan selanjutnya
                         Intent pertanyaan_selanjutnya = new Intent(G21.this, G22.class);
                         startActivity(pertanyaan_selanjutnya);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
@@ -42,10 +45,24 @@ public class G21 extends AppCompatActivity {
                 switch (view.getId()){
                     case R.id.gejala_tidak:
                         //Mengganti ke pertanyaan lainnya
+                        Toast.makeText(G21.this, getString(R.string.kembali_ke_awal), Toast.LENGTH_LONG).show();
                         Intent mengganti_pertanyaan = new Intent(G21.this, G03.class);
                         startActivity(mengganti_pertanyaan);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

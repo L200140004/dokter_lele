@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dokter Lele</string>
+    <string name="app_name">Catfish Doctor</string>
     <string name="openDrawer">Drawer has been opened!</string>
     <string name="closeDrawer">Drawer has been closed!</string>
     <string name="navigasi_kategori_1">Menu list</string>
@@ -9,13 +9,13 @@
     <string name="menu_keempat">Disease History</string>
     <string name="navigasi_kategori_2">Exit</string>
     <string name="menu_keluar">Exit</string>
-    <string name="info_aplikasi">Information about Dokter Lele</string>
-    <string name="penjelasan_aplikasi">Dokter Lele is an Android-based Expert System Application with disease diagnosis function in catfish, this application is made to give information on catfish farmer about disease type, disease cause, way of treatment and prevention way on catfish disease.</string>
-    <string name="versi">Dokter Lele version 1.2</string>
+    <string name="info_aplikasi">Information about Catfish Doctor</string>
+    <string name="penjelasan_aplikasi">Catfish Doctor is an Android-based Expert System Application with disease diagnosis function in catfish, this application is made to give information on catfish farmer about disease type, disease cause, way of treatment and prevention way on catfish disease.</string>
+    <string name="versi">Catfish Doctor version 1.0</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
-    <string name="dokter_lele">DOKTER LELE</string>
-    <string name="desc_slide1">Welcome to the Dokter Lele app!</string>
+    <string name="dokter_lele">CATFISH DOCTOR</string>
+    <string name="desc_slide1">Welcome to the Catfish Doctor app!</string>
     <string name="info">Please select the menu by pressing the upper left corner button on the Main Menu, which consists of noble diagnostic menu, disease data, symptom data and history of disease</string>
     <string name="waning">On the list of catfish diseases can be clicked and will bring up detailed information</string>
     <string name="informasi">INFORMATION</string>
@@ -148,4 +148,5 @@
     <string name="hapus">Delete</string>
     <string name="aksi">Choose an action on this history of the disease!</string>
     <string name="halaman_kosong">Blank page!</string>
+    <string name="kembali_ke_awal">Sorry, the input you entered does not match the path. Return to the first question!</string>
 </resources>

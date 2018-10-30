@@ -25,4 +25,16 @@ public class Aeromonas_punctata extends AppCompatActivity {
         textViewPencegahan.setText(R.string.pencegahan03);
         textViewPengobatan.setText(R.string.pengobatan03);
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

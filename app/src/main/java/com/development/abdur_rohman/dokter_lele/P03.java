@@ -43,6 +43,7 @@ public class P03 extends AppCompatActivity {
                 Intent telah_selesai = new Intent(P03.this, MainMenu.class);
                 simpanRiwayat("Aeromonas punctata");
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         //Mensetting isi dari TextView
@@ -51,5 +52,17 @@ public class P03 extends AppCompatActivity {
         textViewPenyebab.setText(R.string.penyebab_bakteri);
         textViewPencegahan.setText(R.string.pencegahan03);
         textViewPengobatan.setText(R.string.pengobatan03);
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

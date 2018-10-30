@@ -25,4 +25,16 @@ public class Tuberculosis extends AppCompatActivity {
         textViewPengobatan.setText(R.string.pengobatan06);
         textViewGejala.setText(R.string.gejala06);
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

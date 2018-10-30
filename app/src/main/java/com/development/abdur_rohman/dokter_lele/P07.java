@@ -42,6 +42,7 @@ public class P07 extends AppCompatActivity {
                 Intent telah_selesai = new Intent(P07.this, MainMenu.class);
                 simpanRiwayat("Jamur putih");
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         setTitle(R.string.p07);
@@ -49,5 +50,17 @@ public class P07 extends AppCompatActivity {
         textViewPenyebab.setText(R.string.serangan_jamur);
         textViewPencegahan.setText(R.string.pencegahan07);
         textViewPengobatan.setText(R.string.pengobatan07);
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

@@ -25,4 +25,16 @@ public class Columnaris extends AppCompatActivity {
         textViewPencegahan.setText(R.string.pencegahan04);
         textViewPengobatan.setText(R.string.pengobatan04);
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

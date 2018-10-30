@@ -48,9 +48,23 @@ public class DaftarPenyakit extends AppCompatActivity {
                 data.putInt("Id_Penyakit", rincian.perolehidPenyakit());
                 intent.putExtras(data);
                 startActivityForResult(intent, 1);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
     //Data ArrayList yang dipakai untuk infoPenyakit
     private ArrayList<RincianPenyakit> perolehData(){
         dataView = new ArrayList<RincianPenyakit>();

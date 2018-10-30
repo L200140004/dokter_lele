@@ -6,11 +6,11 @@
 
     <ImageView
         android:id="@+id/asSplash"
-        android:layout_width="@dimen/seratus"
-        android:layout_height="@dimen/seratus"
+        android:layout_width="@dimen/seratus_enam_puluh"
+        android:layout_height="@dimen/seratus_enam_puluh"
         android:layout_centerInParent="true"
         android:scaleType="fitXY"
-        android:src="@drawable/logo_dokter_lele_thumbnail" />
+        android:src="@drawable/ic_launcher_foregound" />
 
     <TextView
         android:layout_width="wrap_content"

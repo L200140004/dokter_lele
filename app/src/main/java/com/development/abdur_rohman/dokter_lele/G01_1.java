@@ -33,6 +33,7 @@ public class G01_1 extends AppCompatActivity {
                         //Mengubungkan ke pertanyaan selanjutnya
                         Intent pertanyaan_selanjutnya = new Intent(G01_1.this, G02_1.class);
                         startActivity(pertanyaan_selanjutnya);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
@@ -44,8 +45,21 @@ public class G01_1 extends AppCompatActivity {
                         //Mengganti ke pertanyaan lainnya
                         Intent mengganti_pertanyaan = new Intent(G01_1.this, G13.class);
                         startActivity(mengganti_pertanyaan);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

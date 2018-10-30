@@ -33,6 +33,7 @@ public class G04_1 extends AppCompatActivity {
                         //Mengubungkan ke pertanyaan selanjutnya
                         Intent pertanyaan_selanjutnya = new Intent(G04_1.this, P09_SplashScreen.class);
                         startActivity(pertanyaan_selanjutnya);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
@@ -44,8 +45,21 @@ public class G04_1 extends AppCompatActivity {
                         //Mengganti ke pertanyaan lainnya
                         Intent mengganti_pertanyaan = new Intent(G04_1.this, DaftarPenyakitMiripPertama.class);
                         startActivity(mengganti_pertanyaan);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

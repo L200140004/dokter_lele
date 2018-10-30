@@ -42,6 +42,7 @@ public class P11 extends AppCompatActivity {
                 Intent telah_selesai = new Intent(P11.this, MainMenu.class);
                 simpanRiwayat("Lernea sp.");
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         setTitle(R.string.p11);
@@ -49,5 +50,17 @@ public class P11 extends AppCompatActivity {
         textViewPenyebab.setText(R.string.penyebab_parasit);
         textViewPencegahan.setText(R.string.pencegahan11);
         textViewPengobatan.setText(R.string.pengobatan11);
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

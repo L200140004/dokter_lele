@@ -11,7 +11,7 @@
     <string name="menu_keluar">Keluar</string>
     <string name="info_aplikasi">Informasi Dokter Lele</string>
     <string name="penjelasan_aplikasi">Dokter Lele merupakan sebuah Aplikasi Sistem Pakar berbasis Android dengan fungsi mendiagnosa penyakit pada ikan lele, aplikasi ini dibuat untuk memberikan informasi pada pembudidaya ikan lele mengenai jenis penyakit, penyebab penyakit, cara pengobatan dan cara pencegahan pada penyakit ikan lele.</string>
-    <string name="versi">Dokter Lele versi 1.2</string>
+    <string name="versi">Dokter Lele versi 1.0</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
     <string name="dokter_lele">DOKTER LELE</string>
@@ -148,4 +148,5 @@
     <string name="hapus">Hapus</string>
     <string name="aksi">Pilih aksi pada riwayat penyakit ini!</string>
     <string name="halaman_kosong">Halaman kosong!</string>
+    <string name="kembali_ke_awal">Maaf, input yang Anda masukkan tidak sesuai alur. Kembali ke pertanyaan pertama!</string>
 </resources>

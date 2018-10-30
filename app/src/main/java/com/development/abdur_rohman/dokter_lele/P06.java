@@ -42,6 +42,7 @@ public class P06 extends AppCompatActivity {
                 Intent telah_selesai = new Intent(P06.this, MainMenu.class);
                 simpanRiwayat("Tuberculosis");
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         setTitle(R.string.p06);
@@ -49,5 +50,17 @@ public class P06 extends AppCompatActivity {
         textViewPenyebab.setText(R.string.penyebab_bakteri);
         textViewPencegahan.setText(R.string.pencegahan06);
         textViewPengobatan.setText(R.string.pengobatan06);
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

@@ -31,16 +31,14 @@
 
     </group>
 
-    <item
-        android:id="@+id/navigasi_kategori_2"
-        android:title="@string/navigasi_kategori_2">
-        <menu>
-            <item
-                android:id="@+id/keluar"
-                android:checked="false"
-                android:icon="@drawable/ic_close"
-                android:title="@string/menu_keluar" />
-        </menu>
-    </item>
+    <group
+        android:id="@+id/exit_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/keluar"
+            android:checked="false"
+            android:icon="@drawable/ic_close"
+            android:title="@string/menu_keluar" />
+    </group>
 
 </menu>

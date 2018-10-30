@@ -36,6 +36,7 @@ public class P02 extends AppCompatActivity {
                 simpanRiwayat("Aeromonas hydrophylla");
                 Intent telah_selesai = new Intent(P02.this, MainMenu.class);
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         //Mensetting isi dari TextView
@@ -51,5 +52,17 @@ public class P02 extends AppCompatActivity {
         RiwayatPenyakit n = db.getRiwayatPenyakit(id);
         list_penyakit.add(0, n);
         list_penyakit.clear();
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

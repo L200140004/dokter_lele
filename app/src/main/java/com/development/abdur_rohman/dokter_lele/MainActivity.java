@@ -2,6 +2,7 @@ package com.development.abdur_rohman.dokter_lele;
 
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         mLayout = (LinearLayout) findViewById(R.id.mLayout);
         mNextBtn = (Button) findViewById(R.id.btn_next);
         mBackBtn = (Button) findViewById(R.id.btn_back);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this, R.color.colorPrimaryDark));
+        }
 
         sliderAdapter = new SliderAdapter(this);
         mSlider.setAdapter(sliderAdapter);
@@ -85,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
         startActivity(new Intent(MainActivity.this, MainMenu.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
     public void addDotsIndicator(int position) {

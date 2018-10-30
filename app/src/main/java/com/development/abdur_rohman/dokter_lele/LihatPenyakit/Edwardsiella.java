@@ -25,4 +25,16 @@ public class Edwardsiella extends AppCompatActivity {
         textViewPencegahan.setText(R.string.pencegahan05);
         textViewPengobatan.setText(R.string.pengobatan05);
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

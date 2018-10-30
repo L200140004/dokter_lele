@@ -31,6 +31,7 @@ public class DaftarPenyakitMiripKedua extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent telah_selesai = new Intent(DaftarPenyakitMiripKedua.this, MainMenu.class);
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         //Inisialisasi listData
@@ -64,9 +65,23 @@ public class DaftarPenyakitMiripKedua extends AppCompatActivity {
                 data.putInt("Id_Penyakit", rincian.perolehidPenyakit());
                 intent.putExtras(data);
                 startActivityForResult(intent, 1);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
     private ArrayList<RincianPenyakit> perolehData(){
         dataView = new ArrayList<RincianPenyakit>();
         RincianPenyakit data;

@@ -24,6 +24,7 @@ public class P08_SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(getApplicationContext(), P08.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
                 Toast.makeText(getApplicationContext(),R.string.hasil_diagnosa,
                         Toast.LENGTH_SHORT).show();

@@ -25,4 +25,16 @@ public class Lernea_sp extends AppCompatActivity {
         textViewPengobatan.setText(R.string.pengobatan11);
         textViewGejala.setText(R.string.gejala11);
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

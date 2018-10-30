@@ -33,6 +33,7 @@ public class G02_2 extends AppCompatActivity {
                         //Mengubungkan ke pertanyaan selanjutnya
                         Intent pertanyaan_selanjutnya = new Intent(G02_2.this, P04_SplashScreen.class);
                         startActivity(pertanyaan_selanjutnya);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
@@ -44,8 +45,21 @@ public class G02_2 extends AppCompatActivity {
                         //Mengganti ke pertanyaan lainnya
                         Intent mengganti_pertanyaan = new Intent(G02_2.this, DaftarPenyakitMiripKetiga.class);
                         startActivity(mengganti_pertanyaan);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

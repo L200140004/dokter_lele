@@ -80,36 +80,47 @@ public class RiwayatPenyakiIkanLele extends AppCompatActivity{
                     if (list_penyakit.get(position).getRiwayat_penyakit().equals("Pseudomonas hydrophylla")){
                         Intent penyakit = new Intent(getApplicationContext(), Pseudomonas_hydrophylla.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Aeromonas hydrophylla")){
                         Intent penyakit = new Intent(getApplicationContext(), Aeromonas_hydrophylla.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Aeromonas punctata")){
                         Intent penyakit = new Intent(getApplicationContext(), Aeromonas_punctata.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Columnaris")){
                         Intent penyakit = new Intent(getApplicationContext(), Columnaris.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Edwardsiella")){
                         Intent penyakit = new Intent(getApplicationContext(), Edwardsiella.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Tuberculosis")){
                         Intent penyakit = new Intent(getApplicationContext(), Tuberculosis.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Jamur putih")){
                         Intent penyakit = new Intent(getApplicationContext(), Jamur_putih.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Bintik Putih (White spot)")){
                         Intent penyakit = new Intent(getApplicationContext(), Bintik_putih.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Gatal")){
                         Intent penyakit = new Intent(getApplicationContext(), Gatal.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Trematoda")){
                         Intent penyakit = new Intent(getApplicationContext(), Trematoda.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else if (list_penyakit.get(position).getRiwayat_penyakit().equals("Lernea sp.")){
                         Intent penyakit = new Intent(getApplicationContext(), Lernea_sp.class);
                         startActivity(penyakit);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     } else {
                         Toast.makeText(getApplicationContext(),R.string.halaman_kosong, Toast.LENGTH_SHORT).show();
                     }
@@ -134,5 +145,17 @@ public class RiwayatPenyakiIkanLele extends AppCompatActivity{
         } else {
             noNotesView.setVisibility(View.VISIBLE);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

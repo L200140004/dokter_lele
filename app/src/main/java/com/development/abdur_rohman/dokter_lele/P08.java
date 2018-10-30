@@ -42,6 +42,7 @@ public class P08 extends AppCompatActivity {
                 Intent telah_selesai = new Intent(P08.this, MainMenu.class);
                 simpanRiwayat("Bintik Putih (White spot)");
                 startActivity(telah_selesai);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         setTitle(R.string.p08);
@@ -49,5 +50,17 @@ public class P08 extends AppCompatActivity {
         textViewPenyebab.setText(R.string.penyebab_parasit);
         textViewPencegahan.setText(R.string.pencegahan08);
         textViewPengobatan.setText(R.string.pengobatan08);
+    }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

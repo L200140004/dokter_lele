@@ -40,14 +40,14 @@
 
         <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
             android:id="@+id/imageViewAplikasi"
-            android:layout_width="@dimen/seratus_lima_puluh"
-            android:layout_height="@dimen/seratus_lima_puluh"
+            android:layout_width="@dimen/slider"
+            android:layout_height="@dimen/slider"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="@dimen/sepuluh"
             android:layout_marginRight="@dimen/sepuluh"
             android:layout_marginTop="@dimen/lima_belas"
             android:layout_below="@id/textViewAplikasi"
-            android:src="@drawable/gambar_dokter_lele"
+            android:src="@drawable/ic_launcher_round"
             app:bootstrapBrand="info"
             app:bootstrapSize="md"
             app:hasBorder="false" />

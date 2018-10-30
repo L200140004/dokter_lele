@@ -19,6 +19,7 @@
     <dimen name="header_layout">128dp</dimen>
     <dimen name="delapan_puluh">80dp</dimen>
     <dimen name="seratus">100dp</dimen>
+    <dimen name="seratus_enam_puluh">160dp</dimen>
     <dimen name="empat_puluh">40dp</dimen>
     <dimen name="tiga_ratus">300dp</dimen>
     <dimen name="slider">200dp</dimen>

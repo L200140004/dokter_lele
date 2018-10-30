@@ -25,4 +25,16 @@ public class Jamur_putih extends AppCompatActivity {
         textViewPengobatan.setText(R.string.pengobatan07);
         textViewGejala.setText(R.string.gejala07);
     }
+
+    @Override
+    public void onBackPressed() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }
