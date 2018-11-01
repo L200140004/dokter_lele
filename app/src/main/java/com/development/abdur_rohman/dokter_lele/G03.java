@@ -53,6 +53,9 @@ public class G03 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        Intent mengganti_pertanyaan = new Intent(G03.this, MainMenu.class);
+        startActivity(mengganti_pertanyaan);
+        finish();
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         super.onBackPressed();
     }

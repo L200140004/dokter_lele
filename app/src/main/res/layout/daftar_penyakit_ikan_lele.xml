@@ -29,5 +29,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/sepuluh"
         android:layout_marginRight="@dimen/sepuluh"
-        android:layout_marginBottom="@dimen/dua_puluh" />
+        android:layout_marginBottom="@dimen/dua_puluh"
+        android:paddingBottom="@dimen/empat"/>
+
 </LinearLayout>

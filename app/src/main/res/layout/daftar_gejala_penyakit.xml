@@ -31,5 +31,7 @@
         android:layout_marginLeft="@dimen/sepuluh"
         android:layout_marginRight="@dimen/sepuluh"
         android:clickable="false"
-        android:layoutMode="clipBounds" />
+        android:layoutMode="clipBounds"
+        android:paddingBottom="@dimen/empat"/>
+
 </LinearLayout>

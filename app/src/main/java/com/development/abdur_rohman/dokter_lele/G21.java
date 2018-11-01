@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
-
 import com.beardedhen.androidbootstrap.BootstrapButton;
 
 public class G21 extends AppCompatActivity {
@@ -47,6 +46,7 @@ public class G21 extends AppCompatActivity {
                         //Mengganti ke pertanyaan lainnya
                         Toast.makeText(G21.this, getString(R.string.kembali_ke_awal), Toast.LENGTH_LONG).show();
                         Intent mengganti_pertanyaan = new Intent(G21.this, G03.class);
+                        mengganti_pertanyaan.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(mengganti_pertanyaan);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }

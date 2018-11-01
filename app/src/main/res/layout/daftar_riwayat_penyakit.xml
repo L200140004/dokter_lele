@@ -31,7 +31,8 @@
         android:layout_marginLeft="@dimen/sepuluh"
         android:layout_marginRight="@dimen/sepuluh"
         android:layout_marginTop="@dimen/lima_belas"
-        android:layout_marginBottom="@dimen/lima_belas"/>
+        android:layout_marginBottom="@dimen/lima_belas"
+        android:paddingBottom="@dimen/empat"/>
 
     <TextView
         android:id="@+id/riwayat_penyakit_kosong"
