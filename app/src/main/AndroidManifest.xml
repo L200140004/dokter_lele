@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.development.abdur_rohman.dokter_lele">
+    package="com.application.abdur_rohman.dokter_lele">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.SplashScreen"
             android:label="@string/app_name"
             android:noHistory="true"
             android:screenOrientation="portrait"
@@ -22,349 +22,349 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainMenu"
+            android:name="com.application.abdur_rohman.dokter_lele.MainMenu"
             android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".DaftarGejala"
+            android:name="com.application.abdur_rohman.dokter_lele.DaftarGejala"
             android:label="@string/daftar_gejala"
-            android:parentActivityName=".MainMenu">
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".DaftarPenyakit"
+            android:name="com.application.abdur_rohman.dokter_lele.DaftarPenyakit"
             android:label="@string/daftar_penyakit"
-            android:parentActivityName=".MainMenu">
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".DaftarPenyakitMiripPertama">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.DaftarPenyakitMiripPertama">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".DaftarPenyakitMiripKedua">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.DaftarPenyakitMiripKedua">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".DaftarPenyakitMiripKetiga">
-            <intent-filter>
-                <action android:name="android.intent.action.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".G01"
-            android:parentActivityName=".MainMenu">
-            <intent-filter>
-                <action android:name="android.intent.action.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".DaftarPenyakitMiripKeempat">
-            <intent-filter>
-                <action android:name="android.intent.action.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".DaftarPenyakitMiripKelima">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.DaftarPenyakitMiripKetiga">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G01_1"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G01"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.application.abdur_rohman.dokter_lele.DaftarPenyakitMiripKeempat">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.application.abdur_rohman.dokter_lele.DaftarPenyakitMiripKelima">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G01_2"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G01_1"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G02"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G01_2"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G02_1"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G02"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G02_2"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G02_1"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G03"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G02_2"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G04"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G03"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G04_1"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G04"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G04_2"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G04_1"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G05"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G04_2"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G05_1"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G05"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G06"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G05_1"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G06_1"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G06"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G07"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G06_1"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G08"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G07"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G09"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G08"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G10"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G09"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G11"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G10"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G12"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G11"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G13"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G12"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G14"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G13"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G15"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G14"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G16"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G15"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G17"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G16"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G18"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G17"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G19"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G18"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G19_1"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G19"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G20"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G19_1"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G21"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G20"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".G22"
-            android:parentActivityName=".MainMenu">
+            android:name="com.application.abdur_rohman.dokter_lele.G21"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P01"
+            android:name="com.application.abdur_rohman.dokter_lele.G22"
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.abdur_rohman.dokter_lele.P01"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P02"
+            android:name="com.application.abdur_rohman.dokter_lele.P02"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P03"
+            android:name="com.application.abdur_rohman.dokter_lele.P03"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P04"
+            android:name="com.application.abdur_rohman.dokter_lele.P04"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P05"
+            android:name="com.application.abdur_rohman.dokter_lele.P05"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P06"
+            android:name="com.application.abdur_rohman.dokter_lele.P06"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P07"
+            android:name="com.application.abdur_rohman.dokter_lele.P07"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P08"
+            android:name="com.application.abdur_rohman.dokter_lele.P08"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P09"
+            android:name="com.application.abdur_rohman.dokter_lele.P09"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P10"
+            android:name="com.application.abdur_rohman.dokter_lele.P10"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P11"
+            android:name="com.application.abdur_rohman.dokter_lele.P11"
             android:label="@string/hasil">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".P01_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P01_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -372,7 +372,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P02_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P02_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -380,7 +380,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P03_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P03_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -388,7 +388,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P04_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P04_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -396,7 +396,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P05_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P05_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -404,7 +404,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P06_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P06_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -412,7 +412,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P07_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P07_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -420,7 +420,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P08_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P08_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -428,7 +428,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P09_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P09_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -436,7 +436,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P10_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P10_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -444,7 +444,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P11_SplashScreen"
+            android:name="com.application.abdur_rohman.dokter_lele.P11_SplashScreen"
             android:label="Hasil Diagnosis"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -452,83 +452,83 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".InfoPenyakit"
+            android:name="com.application.abdur_rohman.dokter_lele.InfoPenyakit"
             android:label="Info Detail Penyakit">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".InfoPenyakitMirip"
+            android:name="com.application.abdur_rohman.dokter_lele.InfoPenyakitMirip"
             android:label="Info Detail Penyakit yang Mirip">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".RiwayatPenyakiIkanLele"
+            android:name="com.application.abdur_rohman.dokter_lele.RiwayatPenyakiIkanLele"
             android:label="@string/daftar_riwayat"
-            android:parentActivityName=".MainMenu">
+            android:parentActivityName="com.application.abdur_rohman.dokter_lele.MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Pseudomonas_hydrophylla">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Pseudomonas_hydrophylla">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Aeromonas_hydrophylla">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Aeromonas_hydrophylla">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Aeromonas_punctata">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Aeromonas_punctata">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Tuberculosis">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Tuberculosis">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Trematoda">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Trematoda">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Bintik_putih">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Bintik_putih">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Columnaris">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Columnaris">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Edwardsiella">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Edwardsiella">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Gatal">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Gatal">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Jamur_putih">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Jamur_putih">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LihatPenyakit.Lernea_sp">
+        <activity android:name="com.application.abdur_rohman.dokter_lele.LihatPenyakit.Lernea_sp">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name="com.application.abdur_rohman.dokter_lele.MainActivity"
             android:theme="@style/NoActionBar"/>
     </application>
 
