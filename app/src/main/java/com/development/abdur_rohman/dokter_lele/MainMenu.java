@@ -44,7 +44,6 @@ public class MainMenu extends AppCompatActivity {
         int startEnd = getResources().getDimensionPixelOffset(R.dimen.sepuluh);
         int top = getResources().getDimensionPixelOffset(R.dimen.lima_puluh);
         layout_root = navigationView.getHeaderView(0).findViewById(R.id.layout_root);
-        layout_root.setPadding(startEnd, startEnd, startEnd, startEnd);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(MainMenu.this, R.color.colorPrimaryDark));
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
@@ -53,6 +52,8 @@ public class MainMenu extends AppCompatActivity {
             );
             params.setMargins(startEnd, top, startEnd, 0);
             layout_root.setLayoutParams(params);
+        } else {
+
         }
         //Mengatur Item NavigationView yang akan dipanggil untuk menangani item klik menu navigasi
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
